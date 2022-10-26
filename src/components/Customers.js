@@ -66,7 +66,7 @@ const Customers = () => {
     <div>
         <h1>DP Automotive services customers</h1>
           <div className="flex-row">
-            <div className="flex-large">
+            <div className="left-box">
               {updating ? (
                 <div>
                   <h2>Edit information</h2>

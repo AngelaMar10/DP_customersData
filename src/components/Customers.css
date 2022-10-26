@@ -1,7 +1,9 @@
 
-* {
-  box-sizing: border-box;
+
+*::before, *::after {
+  box-sizing: inherit;
   text-align: center;
+
 }
 
 body {
@@ -13,6 +15,20 @@ body {
   overflow: visible;
   margin-left: 5%;
   margin-right: 5%;
+}
+
+a {
+  color: #dedede;
+  display: inline;
+  justify-content: space-between;
+}
+
+.flex-small, .flex-large {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.left-box {
+  max-width: 15rem;
 }
 .flex-row {
   display: flex;
@@ -77,11 +93,11 @@ thead th {
 }
 
 tfoot th {
-  border-top: 2px solid #dedede;
+  border-top: 2px solid #777373;
 }
 
 td {
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid #777373;
 }
 
 th,
@@ -90,11 +106,7 @@ td {
   padding: 0.5rem;
 }
 
-/* caption {
-  padding: 1rem 0;
-  caption-side: bottom;
-  color: #ababab;
-} */
+
 
 form {
   display: flexbox;
@@ -115,7 +127,16 @@ form {
 input {
   margin-bottom: 00.5rem;
 }
-textarea {
+/* textarea {
   overflow: auto;
   height: auto;
-}
+} */
+
+/* @media only screen and (max-width: 820px) {
+  header nav {
+    display: none;
+  }
+  #hamburguer-icon {
+    display: block;
+  }
+} */
