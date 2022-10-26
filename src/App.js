@@ -12,14 +12,12 @@ function App() {
         <Link to="/Customers">Customers</Link>
       </nav>
       <Routes>
-        <Route path='/' element={<Home name='DP Automotive Service and Repais' />} />
-        <Route path='/Customer' element={<Customers name='DP Automotive Service and Repais' />} />
+        <Route path='/' element={<Home name='DP Automotive Service' />} />
+        <Route path='/Customers'  element={<Customers />}/>
       </Routes>
     </div>
   )
 }
-
-  
 
 
 export default App;

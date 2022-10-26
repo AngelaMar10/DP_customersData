@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import CustomerTable from './CustomerTable'
+import CustomerTable from './CustomerTable';
 import AddCustomer from './AddCustomer';
-import '../App.css';
+import './Customers.css';
 
 const Customers = () => {
 
@@ -11,8 +11,15 @@ const Customers = () => {
     { id:2, name: 'Diego Smith', rego: "SA328TU", phone: "0455554899", serviceDate: "10/03/2022" }
   ]
 
+  const initialInputState = { id: null, name: '', rego: '', phone: '', serviceDate: ''}
+
+  //states
   // Using useState with a previous information
   const [customers, setCustomers] = useState(customersInfo)
+  const [updating, setUpdating]= useState(false)
+  const [currentCustomer, setCurrentCustomer] = useState(initialInputState)
+  
+
 
   // Function to add customers
   const addCustomer = (customer) => {
@@ -28,6 +35,17 @@ const Customers = () => {
   }
 
   // Function to edit customers
+  const updateCustomer = (id, updateCustomer) => {
+    setUpdating(false)
+
+    setCustomers(customers.map((customer) => (customer.id === id ? updateCustomer : customer)))
+  }
+
+  const updateField = customer => {
+    setUpdating(true)
+
+    setCurrentCustomer({ id: customer.id, name: customer.name, rego: customer.rego, phone: customer.phone, serviceDate: customer.serviceDate})
+  }
 
   return (
     <div>

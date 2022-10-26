@@ -11,7 +11,7 @@ function Home(props) {
 
   return (
     <div className="Home">
-      <h1>Welcome {props.name} to my Burger App</h1>
+      <h1>Welcome to {props.name} Data management App</h1>
       <p>Counter: {counter}</p>
       <button onClick={increaseCounter}>Count</button>
     </div>
