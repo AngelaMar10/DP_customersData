@@ -22,7 +22,11 @@ const CustomerTable = (props) => {
               <td>{customer.phone}</td>
               <td>{customer.serviceDate}</td>
               <td>
-                <button className="edit-button">Edit</button>
+                <button className="edit-button"
+                onClick={() => {
+                  props.updateField(customer)
+                }}
+                >Edit</button>
                 <button className="delete-button"
                 // making an anonymous function here will prevent Onclick to exectue automatically
                 onClick={() => props.deleteCustomer(customer.id)}
