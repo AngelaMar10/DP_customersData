@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import CustomerTable from './components/CustomerTable'
-import AddCustomer from './components/AddCustomer';
-import './App.css';
+import CustomerTable from './CustomerTable'
+import AddCustomer from './AddCustomer';
+import '../App.css';
 
 const Customers = () => {
 
