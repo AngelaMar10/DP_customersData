@@ -21,11 +21,18 @@ const Customers = () => {
   const [currentCustomer, setCurrentCustomer] = useState(initialInputState)
   
 
+  //Function to generate a randome ID to avoid customers sharing same ID and then troubleshooting in the delete function.
+  let newId = '';
+  const characteres = 'abcdef123456789'
+  for (let i = 0; i < characteres.length; i++) {
+    newId += characteres.charAt(Math.floor(Math.random() * characteres.length))
+  }
+  console.log(newId)
 
   // Function to add customers
   // Append customer to the array
   const addCustomer = (customer) => {
-    customer.id = customers.length + 1
+    customer.id = newId
     setCustomers([
       //making a copy from customers (...)
       ...customers, customer])
