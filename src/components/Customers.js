@@ -62,7 +62,7 @@ const Customers = () => {
             <div className="flex-large">
               {updating ? (
                 <div>
-                  <h2>Edit Customer information</h2>
+                  <h2>Edit information</h2>
                   <EditCustomer
                     setUpdating={setUpdating}
                     currentCustomer={currentCustomer}

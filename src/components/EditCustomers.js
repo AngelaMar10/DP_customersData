@@ -1,11 +1,20 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 
 
 const EditCustomer = (props) => {
-  // const initialInputState = { id: null, name: '', rego: '', phone: '', serviceDate: ''}
+ 
   const [customer, setCustomer] = useState(props.currentCustomer)
+
+  // Skipping when applying an effect, so when pressing edit button and want to edit other customer's information and allowing that edit button works.
+  // useEffect calls back the function that updates the customer's info.
+  useEffect(
+    () => {
+      setCustomer(props.currentCustomer)
+    },
+    [props]
+  )
 
   const handleInputChange = (event) => {
     const {name, value } = event.target
