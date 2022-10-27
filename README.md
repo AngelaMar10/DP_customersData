@@ -39,7 +39,7 @@ Once inside the application, the user will have the possibility to add clients, 
 - To manage time.
 
 
-## :National Park: Future features
+## Future features
 - An instant pop message for users when they need help with their account.
 - Automatic invoice generator.
 - Alerts of the services that are about to be due again according to the date of the previous service
