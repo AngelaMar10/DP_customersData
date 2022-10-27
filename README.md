@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# DP Autoservice Customers Data
+DP Autoservices customers Data is an App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## :computer: [Click here](DPcustomersData.surge.sh) to see my live project!
 
-## Available Scripts
+## :speech_balloon: About
+- All profiles can remain public access.
+- The user can create an account with basic data such as name, email and create a password of at least 8 characters.
+- When the user logs in, they can create a profile with the following fields to fill out.
+![](photos_and_sketches/Add_profile.png)
+- The user also has the possibility to delete the profile, and to add a new one.
+- There is an option to edit a current profile, all fields are editable.
+![](photos_and_sketches/Edit_profile.png)
 
-In the project directory, you can run:
+## :memo: Planning:
+## Sketchs for the initial idea:
+- There are the sketchs used to start the project.
+![](photos_and_sketches/target.jpg)
+![](photos_and_sketches/demo.jpg)
 
-### `npm start`
+- Working in a team of 3 people, we drew up a plan as follows:
+1) Discuss and clarify the idea and goals of the application
+2) Map out workflow and divide tasks.
+3) We established a time frame od 1 days to obtain the minimum characteristics of the application.
+4) After getting the mvp ready, we worked on the design and extra features for the application (minimum length characters for the password, functions to edit, delete, add new profiles).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## :rocket: Cool tech
+- Node
+- React
+- Animations on CSS
+- Libraries
+- Trello
+- package.json
+- Hooks in React
+- The appearance of the navigation bar is different for the mobile version and for the desktop version.
 
-### `npm test`
+## :scream: Bugs to fix :poop:
+- When you edit it only shows after you refresh.
+- Text is overflowing for headline
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## :sob: Lessons learnt
+- We learned to work in different branches on the terminal.
+- To work on Github in collaboration and having the Upstream (The person managing the merging of work on Git.)
+- To work on functions to apply based on conditions such as if they are registered what I allow them to do ans see. For example; delete and edit.
+- To write functions readable for others so they can continue working on them.
+- To manage time as a team.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## :National Park: Future features
+- An instant pop message for users when they need help with their account.
+- A payment method. 
+- Search bar.
+- Top skills. 
