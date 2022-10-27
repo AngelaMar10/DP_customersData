@@ -1,10 +1,23 @@
 import React from "react";
+// import GeneratePDF from './pdf_generator'
+import jsPDF from 'jspdf'
 
 const CustomerTable = (props) => {
 
   console.log(props.customers)
-  return (
+
+  const generatePDF = () => {
+    var doc = new jsPDF('p', 'pt');
+    
+    doc.save('demo.pdf')
+  }      
+    
+    
+  return (    
     <table>
+      <div>
+          <button onClick={generatePDF} type="primary">Download PDF</button> 
+        </div>
       <thead>
         <tr>
           <th>Name</th>
@@ -14,7 +27,8 @@ const CustomerTable = (props) => {
         </tr>
       </thead>
       <tbody>
-        {
+        
+        { 
           props.customers.map(customer => (
             <tr key={customer.id}>
               <td>{customer.name}</td>
@@ -22,6 +36,7 @@ const CustomerTable = (props) => {
               <td>{customer.phone}</td>
               <td>{customer.serviceDate}</td>
               <td>
+              
                 <button className="edit-button"
                 onClick={() => {
                   props.updateField(customer)
@@ -36,9 +51,10 @@ const CustomerTable = (props) => {
 
           ))
         }
-        
       </tbody>
+      
     </table>
+    
   )
 }
 
