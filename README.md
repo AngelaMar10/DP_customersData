@@ -18,37 +18,29 @@ Once inside the application, the user will have the possibility to add clients, 
 ![](public/images/IMG_0152.jpg)
 ![](public/images/IMG_0153.jpg)
 
-- Working in a team of 3 people, we drew up a plan as follows:
-1) Discuss and clarify the idea and goals of the application
-2) Map out workflow and divide tasks.
-3) We established a time frame od 1 days to obtain the minimum characteristics of the application.
-4) After getting the mvp ready, we worked on the design and extra features for the application (minimum length characters for the password, functions to edit, delete, add new profiles).
-
-
 ## :rocket: Cool tech
 - Node
 - React
 - Animations on CSS
 - Libraries
-- Trello
+- Procreate
 - package.json
 - Hooks in React
-- The appearance of the navigation bar is different for the mobile version and for the desktop version.
+- There is a file download button for pdf viewing
 
 ## :scream: Bugs to fix :poop:
-- When you edit it only shows after you refresh.
-- Text is overflowing for headline
+- When the page is refreshed, the user is automatically logged out.
+- When generating the pdf file, you can also see the buttons inside the file.
 
 ## :sob: Lessons learnt
-- We learned to work in different branches on the terminal.
-- To work on Github in collaboration and having the Upstream (The person managing the merging of work on Git.)
+- the implementation of the hooks in React and external frameworks such as jspdf.
 - To work on functions to apply based on conditions such as if they are registered what I allow them to do ans see. For example; delete and edit.
 - To write functions readable for others so they can continue working on them.
-- To manage time as a team.
+- To manage time.
 
 
 ## :National Park: Future features
 - An instant pop message for users when they need help with their account.
-- A payment method. 
-- Search bar.
-- Top skills. 
+- Automatic invoice generator.
+- Alerts of the services that are about to be due again according to the date of the previous service
+
