@@ -7,17 +7,20 @@ const CustomerTable = (props) => {
   console.log(props.customers)
 
   const generatePDF = () => {
-    var doc = new jsPDF('p', 'pt');
-    
-    doc.save('demo.pdf')
+    var doc = new jsPDF('p', 'pt', "a4");
+    doc.html(document.querySelector('#content'), {
+      callback: function(pdf) {
+        pdf.save('customers.pdf')
+      }
+    })
+    // doc.save('demo.pdf')
   }      
     
     
   return (    
     <table>
-      <div>
-          <button onClick={generatePDF} type="primary">Download PDF</button> 
-        </div>
+      <button className="pdf" onClick={generatePDF} type="primary">Download PDF</button>
+      <div id="content">
       <thead>
         <tr>
           <th>Name</th>
@@ -27,7 +30,6 @@ const CustomerTable = (props) => {
         </tr>
       </thead>
       <tbody>
-        
         { 
           props.customers.map(customer => (
             <tr key={customer.id}>
@@ -36,7 +38,6 @@ const CustomerTable = (props) => {
               <td>{customer.phone}</td>
               <td>{customer.serviceDate}</td>
               <td>
-              
                 <button className="edit-button"
                 onClick={() => {
                   props.updateField(customer)
@@ -48,11 +49,10 @@ const CustomerTable = (props) => {
                 >Delete</button>
               </td>
             </tr>
-
           ))
         }
       </tbody>
-      
+      </div>
     </table>
     
   )
