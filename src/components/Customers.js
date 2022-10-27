@@ -4,6 +4,8 @@ import AddCustomer from './AddCustomer';
 import './Customers.css';
 import EditCustomer from './EditCustomers';
 
+// import Home from './Home'
+
 const Customers = () => {
 
   // As I work with local storage I am using a framework to allocate an id for each customer, this will help in my delete function.
@@ -64,36 +66,36 @@ const Customers = () => {
 
   return (
     <div>
-        <h1>DP Automotive services customers</h1>
-          <div className="flex-row">
-            <div className="left-box">
-              {updating ? (
-                <div>
-                  <h2>Edit information</h2>
-                  <EditCustomer
-                    setUpdating={setUpdating}
-                    currentCustomer={currentCustomer}
-                    updateCustomer={updateCustomer}
-                  />
-                </div>
-              ) : (
-                <div className="flex-large">
-              <h2>Add customer</h2>
-              <AddCustomer 
-                addCustomer={addCustomer}/>
+      <div className="flex-row">
+        <div className="left-box">
+          {updating ? (
+            <div>
+              <h2>Edit information</h2>
+              <EditCustomer
+                setUpdating={setUpdating}
+                currentCustomer={currentCustomer}
+                updateCustomer={updateCustomer}
+              />
             </div>
-              )}
-            </div>
-            
+          ) : (
             <div className="flex-large">
-              <h2>Customers Information</h2>
-              {/* To pass the customers information, I use props */}
-              <CustomerTable 
-                customers={customers} 
-                updateField={updateField}
-                deleteCustomer={deleteCustomer}/>
-            </div>
-          </div>
+          <h2>Add customer</h2>
+          <AddCustomer 
+            addCustomer={addCustomer}/>
+        </div>
+          )}
+        </div>
+        
+        <div className="flex-large">
+          <h2>Customers Information</h2>
+          {/* To pass the customers information, I use props */}
+          <CustomerTable 
+            customers={customers} 
+            updateField={updateField}
+            deleteCustomer={deleteCustomer}/>
+        </div>
+      </div>
+          
     </div>
   )
 }

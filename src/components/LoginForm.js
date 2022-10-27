@@ -28,7 +28,6 @@ function LoginForm({Login, error}) {
         <input type="password" name="password" id="password" onChange={event => setDetails({...details, password: event.target.value})} value={details.password}/>
       </div>
       <button>Login</button>
-      {/* <input type="Submit" value="Login"/> */}
     </div>
   </form>
   )
