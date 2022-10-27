@@ -61,6 +61,21 @@ button {
   text-decoration: none;
   line-height: 1;
 }
+.logout {
+  border: 1px solid #062f46;
+  border-radius: 4px;
+  background: #195476;
+  color: #dedede;
+  font-weight: 400;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  padding: 0.75rem 0.75rem;
+  margin: 0.2rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 1;
+}
 
 table {
   display: block;

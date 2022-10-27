@@ -29,7 +29,7 @@ const Customers = () => {
   for (let i = 0; i < characteres.length; i++) {
     newId += characteres.charAt(Math.floor(Math.random() * characteres.length))
   }
-  console.log(newId)
+  // console.log(newId)
 
   // Function to add customers
   // Append customer to the array

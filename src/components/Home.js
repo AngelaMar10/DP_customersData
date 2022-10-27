@@ -46,7 +46,7 @@ function Home() {
             <Routes>
             <Route path='/Customers'  element={<Customers />}/>
             </Routes>
-            <button onClick={Logout}>Logout</button>
+            <button className="logout" onClick={Logout}>Logout</button>
           </div>
         ) : (
           <LoginForm Login={Login} error={error} />
