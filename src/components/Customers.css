@@ -1,5 +1,3 @@
-
-
 *::before, *::after {
   box-sizing: inherit;
   text-align: center;
@@ -9,7 +7,7 @@
 body {
   background-color: #062f46;
   /* background-color: #F6F6F2; */
-  font-family: 'Exo', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   display: block;
   box-sizing: content-box;
   overflow: visible;
@@ -106,7 +104,13 @@ td {
   padding: 0.5rem;
 }
 
-
+.login-form {
+  display: flexbox;
+  position: relative;
+  color: #dedede;
+  text-align: center;
+  max-width: 11rem;
+}
 
 form {
   display: flexbox;
@@ -125,7 +129,7 @@ form {
 
 }
 input {
-  margin-bottom: 00.5rem;
+  margin-bottom: 0.5rem;
 }
 /* textarea {
   overflow: auto;
