@@ -1,15 +1,25 @@
 import React from "react";
 // import GeneratePDF from './pdf_generator'
-import jsPDF from 'jspdf'
+import jsPDF from 'jspdf';
+// import { useRef } from 'react';
 
 const CustomerTable = (props) => {
 
   console.log(props.customers)
 
+
+  
   const generatePDF = () => {
     var doc = new jsPDF('p', 'pt', "a4");
+    
+    // const viewPdf = useRef();
     doc.html(document.querySelector('#content'), {
       callback: function(pdf) {
+        doc.addFont('helvetica', 'normal')
+        doc.setFontSize(20)
+        doc.text(150, 20, 'DP CUSTOMERS INFORMATION')
+        
+        
         pdf.save('customers.pdf')
       }
     })
@@ -38,12 +48,12 @@ const CustomerTable = (props) => {
               <td>{customer.phone}</td>
               <td>{customer.serviceDate}</td>
               <td>
-                <button className="edit-button"
+                <button className="material-symbols-outlined"
                 onClick={() => {
                   props.updateField(customer)
                 }}
                 >Edit</button>
-                <button className="delete-button"
+                <button className="material-symbols-outlined " id="delete-btn" data-tooltip="Delete"
                 // making an anonymous function here will prevent Onclick to exectue automatically
                 onClick={() => props.deleteCustomer(customer.id)}
                 >Delete</button>
