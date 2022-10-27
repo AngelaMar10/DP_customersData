@@ -4,11 +4,12 @@ DP Autoservices customers Data is is an application for the automotive service c
 ## :computer: [Click here](DPcustomersData.surge.sh) to see my live project!
 
 ## :speech_balloon: About
-The first interface shows the Login form where only the administrator has an email account and password previously established, in this way a single account has access to customer data, which allows the confidentiality of the information.
-![](public/images/login.jpg)
+- The first interface shows the Login form where only the administrator has an email account and password previously established, in this way a single account has access to customer data, which allows the confidentiality of the information.
+
+![](public/images/login.png)
 
 Once inside the application, the user will have the possibility to add clients, edit the information of existing clients, and delete data.
-![](public/images/logged.jpg)
+![](public/images/logged.png)
 
 ## :memo: Planning:
 ## Sketchs for the initial idea:
