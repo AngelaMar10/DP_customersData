@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import { Routes, Route} from 'react-router-dom'
+// import { Routes, Route} from 'react-router-dom'
 import Customers from './Customers'
 
 // using a hook useState allow us to change from a class to a function
@@ -38,17 +38,20 @@ function Home() {
       <div className="Home">
   
         <h2>DP Automotive services Customers Data</h2>
-        {(user.email !== "") ? (
-          <div> 
-            <h2>
-            Welcome {user.name}  
-            </h2>
-            <Routes>
-            <Route path='/Customers'  element={<Customers />}/>
-            </Routes>
-            <button className="logout" onClick={Logout}>Logout</button>
-          </div>
-        ) : (
+        {(user.email !== "") ? 
+          (
+            <div className='login'> 
+              <h2>
+              Welcome {user.name}  
+              </h2>
+              <button className="logout" onClick={Logout}>Logout</button>
+              <Customers />
+              {/* <Routes>
+              <Route path='/'  element={<Customers />}/>
+              </Routes> */}
+              {/* <button className="logout" onClick={Logout}>Logout</button> */}
+            </div>
+          ) : (
           <LoginForm Login={Login} error={error} />
       )}
       
