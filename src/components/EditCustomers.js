@@ -25,7 +25,7 @@ const EditCustomer = (props) => {
   
   
   return (
-    <form 
+    <form className="edit-info"
       onSubmit={(event) => {
         event.preventDefault()
         
@@ -39,7 +39,7 @@ const EditCustomer = (props) => {
       <input type="text" name="phone" value={customer.phone} onChange={handleInputChange}/>
       <label>Service Date</label>
       <input type="text" name="serviceDate" value={customer.serviceDate} onChange={handleInputChange}/>
-      <button>Update info</button>
+      <button>Update</button>
       <button
         onClick={() => props.setUpdating(false)}
       >

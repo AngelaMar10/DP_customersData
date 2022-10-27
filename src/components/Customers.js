@@ -67,14 +67,6 @@ const Customers = () => {
   return (
     <div>
       <div className="flex-row">
-        <div>
-          {/* <input type="text" placeholder='Search...' />
-          {customersInfo.map((value,key) => {
-            return <div>{value.name}</div>
-
-          }
-            )} */}
-        </div>
         <div className="left-box">
           {updating ? (
             <div>

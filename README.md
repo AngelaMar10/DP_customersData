@@ -1,22 +1,21 @@
 # DP Autoservice Customers Data
-DP Autoservices customers Data is an App
+DP Autoservices customers Data is is an application for the automotive service company to keep digital records of its customers.
 
 ## :computer: [Click here](DPcustomersData.surge.sh) to see my live project!
 
 ## :speech_balloon: About
-- All profiles can remain public access.
-- The user can create an account with basic data such as name, email and create a password of at least 8 characters.
-- When the user logs in, they can create a profile with the following fields to fill out.
-![](photos_and_sketches/Add_profile.png)
-- The user also has the possibility to delete the profile, and to add a new one.
-- There is an option to edit a current profile, all fields are editable.
-![](photos_and_sketches/Edit_profile.png)
+The first interface shows the Login form where only the administrator has an email account and password previously established, in this way a single account has access to customer data, which allows the confidentiality of the information.
+![](public/images/login.jpg)
+
+Once inside the application, the user will have the possibility to add clients, edit the information of existing clients, and delete data.
+![](public/images/logged.jpg)
 
 ## :memo: Planning:
 ## Sketchs for the initial idea:
 - There are the sketchs used to start the project.
-![](photos_and_sketches/target.jpg)
-![](photos_and_sketches/demo.jpg)
+![](public/images/IMG_0151.jpg)
+![](public/images/IMG_0152.jpg)
+![](public/images/IMG_0153.jpg)
 
 - Working in a team of 3 people, we drew up a plan as follows:
 1) Discuss and clarify the idea and goals of the application
