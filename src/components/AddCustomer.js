@@ -37,7 +37,7 @@ const AddCustomer = (props) => {
       <input type="text" name="phone" value={customer.phone} onChange={handleInputChange}/>
       <label>Service Date</label>
       <input type="text" name="serviceDate" value={customer.serviceDate} onChange={handleInputChange}/>
-      <button>Add Customer</button>
+      <button>Add</button>
     </form>
   )
 }

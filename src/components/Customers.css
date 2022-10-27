@@ -1,13 +1,12 @@
-*::before, *::after {
-  box-sizing: inherit;
-  text-align: center;
+* {
+  font-family: 'Source Sans Pro', sans-serif;
 
 }
 
 body {
   background-color: #062f46;
   /* background-color: #F6F6F2; */
-  font-family: 'Source Sans Pro', sans-serif;
+  
   display: block;
   box-sizing: content-box;
   overflow: visible;
@@ -37,6 +36,11 @@ a {
 
 h1 {
   font-size: 2em;
+  margin: 0.67em 0;
+  color: #dedede;
+}
+
+h2 {
   margin: 0.67em 0;
   color: #dedede;
 }
